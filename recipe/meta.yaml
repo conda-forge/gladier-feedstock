@@ -1,5 +1,5 @@
 {% set name = "gladier" %}
-{% set version = "0.7.1" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gladier-{{ version }}.tar.gz
-    sha256: 8364bd1601cd692fb4e7c8c6ca30ce29375566eb3bab533362be7f3b820902c0
+    sha256: 9e815153d056a8a1b0fa36b88de4846ff80c1ff15178b34e9e0178add662bf8b
     # FIXME: Remove requirements.txt for next release; missing in PYPI sdist
   - url: https://raw.githubusercontent.com/globus-gladier/gladier/v0.7.1/requirements.txt
     sha256: 3ea5cc8991e6e8c2814c35523a18420cf4322dd93096f2dd08bf8a66c6d47df1
