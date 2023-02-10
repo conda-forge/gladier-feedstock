@@ -8,11 +8,6 @@ package:
 source:
   - url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gladier-{{ version }}.tar.gz
     sha256: 92b7d9acd1ad579fd856d24ff8d13a01cf264f1af44a76d74de0899af9d4fcb0
-    # FIXME: Remove requirements.txt for next release; missing in PYPI sdist
-  - url: https://raw.githubusercontent.com/globus-gladier/gladier/v0.7.1/requirements.txt
-    sha256: 3ea5cc8991e6e8c2814c35523a18420cf4322dd93096f2dd08bf8a66c6d47df1
-  - url: https://raw.githubusercontent.com/globus-gladier/gladier/main/LICENSE
-    sha256: c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
 
 build:
   noarch: python
