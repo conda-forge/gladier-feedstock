@@ -1,5 +1,5 @@
 {% set name = "gladier" %}
-{% set version = "0.9.2" %}
+{% set version = "0.9.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gladier-{{ version }}.tar.gz
-    sha256: d7e3073317bdabdd11c343f1da64f04eda4c57926a08af998ee446f67f6806c2
+    sha256: cad3564e7f687dae8894fad856134d8e7f0db2ca33a8fdaea9c2810270d1ce3a
 
 build:
   noarch: python
