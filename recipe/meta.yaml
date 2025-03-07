@@ -1,5 +1,5 @@
 {% set name = "gladier" %}
-{% set version = "0.9.4" %}
+{% set version = "0.9.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/gladier-{{ version }}.tar.gz
-    sha256: 79add4d9adff34dea5c760170bd098adfbde3c8c67014002b714d1ee83f8edf0
+    sha256: d6975cfb23952c580a3d8e87ac4a4769742a4d6641e106640b76b8bc4565de6a
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -22,7 +22,7 @@ requirements:
   run:
     - fair-research-login >=0.2.6
     - globus-compute-sdk >=2.0.1,<3.0.0
-    - globus-sdk >=3.23.0,<4
+    - globus-sdk >=3.46.0,<4
     - packaging >=21.3
     - pydantic >=1.0
     - python >={{ python_min }}
